@@ -3,10 +3,15 @@
 using namespace std;
 
 int main() {
-    string s;
+    string s, letras;
     getline(cin, s);
 
-    cout << s << endl;
+    for (char c : s) {
+        if (c >= 'a' && c <= 'z')
+            letras += c;
+    }
+
+    cout << letras << endl;
 
     return 0;
 }
